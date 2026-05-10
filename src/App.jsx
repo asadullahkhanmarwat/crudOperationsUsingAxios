@@ -50,7 +50,7 @@ function App() {
       const res = await putUser(editingId, postData);
       console.log(res);
       setUser(user.map
-        (u => u.id === editingId ? { ...u, ...postData} :u ));
+        (u => u.id === editingId ? { ...u, ...postData } : u));
     }
     else {
       const res = await postUser(postData);
@@ -69,25 +69,25 @@ function App() {
   return (
     <>
 
-<div className='flex flex-col items-center justify-center mx-auto my-3 ' >
-  <h1 className='flex  text-2xl text-slate-800 font-bold'>CRUD OPERATIONS USING AXIOS</h1>
-      <span className='flex text-center p-2 justify-center font-bold gap-x-4 border-gray-800 '> 
-        <button onClick={getUserData} className='bg-blue-600 text-white border-slate-950 border-2 px-1 hover:scale-105 active:scale-95'>GET</button>
-        <button onClick={handleCreate} className='bg-green-500 text-white border-slate-950 border-2 px-1 hover:scale-105 active:scale-95'>POST</button>
-      </span>
-</div>
+      <div className='flex flex-col items-center justify-center mx-auto my-3 ' >
+        <h1 className='flex  text-xl text-slate-800 font-bold'>CRUD OPERATIONS USING AXIOS</h1>
+        <span className='flex text-center p-2 justify-center font-bold gap-x-4 border-gray-800 '>
+          <button onClick={getUserData} className='bg-blue-600 text-white border-slate-950 border-2 px-1 hover:scale-105 active:scale-95'>GET</button>
+          <button onClick={handleCreate} className='bg-green-500 text-white border-slate-950 border-2 px-1 hover:scale-105 active:scale-95'>POST</button>
+        </span>
+      </div>
 
       {/* For POST Form*/}
-      {showDataForm &&(
-        <div className='flex justify-center gap-1 p-4 '>
-           <p><b> {editingId ? "Update User" : "Create User"}</b></p>
+      {showDataForm && (
+        <div className='flex flex-col justify-center gap-y-2 mx-2 mb-5'>
+          <p className='flex mx-auto '><b> {editingId ? "Update User" : "Create User"}</b></p>
           <input className='border-black border' type="text" value={postData.name} onChange={(e) => setPostData({ ...postData, name: e.target.value })} placeholder='Enter Name' />
-          <input className='border-black border' type="text" value={postData.username} onChange={(e) => setPostData({ ...postData, username: e.target.value })} placeholder='Enter Username' /> <br />
-          <input className='border-black border' type="text" value={postData.email} onChange={(e) => setPostData({ ...postData, email: e.target.value })} placeholder='Enter Email' /> <br />
+          <input className='border-black border' type="text" value={postData.username} onChange={(e) => setPostData({ ...postData, username: e.target.value })} placeholder='Enter Username' />
+          <input className='border-black border' type="text" value={postData.email} onChange={(e) => setPostData({ ...postData, email: e.target.value })} placeholder='Enter Email' />
 
-          <button className='bg-green-500 border px-1  border-black hover:scale-105 active:scale-95' onClick={handleSubmit}>{editingId ? "Update" : "Create"} </button>
+          <button className='bg-green-500 border  border-black hover:scale-y-110 active:scale-95' onClick={handleSubmit}>{editingId ? "Update" : "Create"} </button>
 
-          <button className='bg-red-500 border px-1 border-black hover:scale-105 active:scale-95' onClick={() => setShowDataForm(false)}>Cancel</button>
+          <button className='bg-red-500 border border-black hover:scale-y-110 active:scale-95' onClick={() => setShowDataForm(false)}>Cancel</button>
         </div>
         // cards
       )}
