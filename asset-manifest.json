@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/crudOperationsUsingAxios/static/css/main.821a4543.css",
-    "main.js": "/crudOperationsUsingAxios/static/js/main.2427419b.js",
+    "main.css": "/crudOperationsUsingAxios/static/css/main.7a7c929e.css",
+    "main.js": "/crudOperationsUsingAxios/static/js/main.a3d6f130.js",
     "static/js/453.e9e7ec89.chunk.js": "/crudOperationsUsingAxios/static/js/453.e9e7ec89.chunk.js",
     "index.html": "/crudOperationsUsingAxios/index.html",
-    "main.821a4543.css.map": "/crudOperationsUsingAxios/static/css/main.821a4543.css.map",
-    "main.2427419b.js.map": "/crudOperationsUsingAxios/static/js/main.2427419b.js.map",
+    "main.7a7c929e.css.map": "/crudOperationsUsingAxios/static/css/main.7a7c929e.css.map",
+    "main.a3d6f130.js.map": "/crudOperationsUsingAxios/static/js/main.a3d6f130.js.map",
     "453.e9e7ec89.chunk.js.map": "/crudOperationsUsingAxios/static/js/453.e9e7ec89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.821a4543.css",
-    "static/js/main.2427419b.js"
+    "static/css/main.7a7c929e.css",
+    "static/js/main.a3d6f130.js"
   ]
 }
